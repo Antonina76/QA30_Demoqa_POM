@@ -32,7 +32,7 @@ public class SidePanel extends BasePages{
     @FindBy(xpath = "//span[.='Practice Form']")
     WebElement practiceForm;
     public PracticeFormPage selectPracticeForm() {
-        click(practiceForm);
+        clickWithJS(practiceForm,0,300);
         return null;
     }
 }
